@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PINMA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <header class="header">
+        <div class="menu container">
+            <a href="index.html" class="logo">Pinma</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="imagenes/lista.svg" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#lista-producto">Productos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img id="img-carrito" src="imagenes/carro.svg" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th>Color</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+                            <a href="#" id="realizar-compra" class="btn-3">Realizar compra</a> 
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Ofertas: Primavera 2024</h1>
+                <p>
+                    Renueva tu armario con nuestra colección de primavera 2024. Disfruta de descuentos increíbles en prendas frescas, colores alegres y estampados vibrantes que te acompañarán en los mejores momentos de la temporada.
+                </p>
+                <div class="botones">
+                    <a href="#" class="btn-1">Información</a>
+                    <a href="#" class="btn-1">Leer más</a>
+                </div>
+            </div>
+            <div class="header-img">
+                <img src="imagenes/conaranja.jpg" alt="">
+            </div>
+        </div>
+   </header>
+
+   <section class="oferts container">
+    <div class="ofert-1 b1">
+        <div class="ofert-txt">
+            <h3>Conjunto Blanco: Luce fresca y elegante este verano con nuestro conjunto de chaleco y short. Un look ideal para cualquier ocasión, desde un paseo por la playa hasta una cena con amigos.</h3>
+        </div>
+        <div class="ofert-img">
+            <img src="imagenes/chashor.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="ofert-1 b2">
+        <div class="ofert-txt">
+            <h3>Conjunto Verde Esmeralda: Luce comoda y a la vanguardia con este conjunto de chaleco y pantalon perfecto para cualquier ocasión. Combina la comodidad y el estilo con un look único.</h3>
+        </div>
+        <div class="ofert-img">
+            <img src="imagenes/chverde.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="ofert-1 b3">
+        <div class="ofert-txt">
+            <h3>Blazer Blanco: Luce elegante y versátil con blazer que es la prenda perfecta para cualquier ocasión. Combínalo con jeans para un look casual o con un vestido para un evento más formal.</h3>
+        </div>
+        <div class="ofert-img">
+            <img src="imagenes/bira.jpg" alt="">
+        </div>
+    </div>
+   </section>
+
+   <main class="products container">
+
+    <h2>Productos</h2>
+
+    <div class="box-container" id="lista-producto">
+
+       <div class="box">
+        <img src="imagenes/blrayas.jpg" alt="">
+        <div class="product-txt">
+            <h3>Conjunto de rayas </h3>
+            <p>Blazer estilo clásico, un botón y bolsillos de tapa</p>
+            <p>Pantalón corte recto con pretina delgada y bolsillos laterales</p>
+            <p>Disponible en: 
+                <select id="color-producto" data-id="1">
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#F7418F">Fucsia</option>
+                    <option value="#EED3D9">Rosa Viejo</option>
+                    <option value="#0E46A3">Azul Rey</option>
+                    <option value="#5BBCFF">Azul Claro</option>
+                    <option value="#FFC700">Amarillo</option>
+                    <option value="#41B06E">Verde</option>
+                    <option value="#BC7FCD">Morado</option>
+                    <option value="#FFFFFF">Blanco</option>
+                    <option value="#A0522D">Marrón</option>
+                    <option value="#A9A9A9">Gris</option>
+                    <option value="#E4C59E">Beige</option>
+                    <option value="#000000">Negro</option>
+                </select>
+            </p>
+            <p class="precio">$120</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+        </div>
+       </div>
+
+       <div class="box">
+        <img src="imagenes/mgcafe.jpg" alt="">
+        <div class="product-txt">
+            <h3>Blazer</h3>
+            <p>Blazer estilo smoking, un botón y bolsillos de ojal</p>
+            <p>Disponible en: 
+                <select id="color-producto" data-id="2">
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#F7418F">Fucsia</option>
+                    <option value="#EED3D9">Rosa Viejo</option>
+                    <option value="#0E46A3">Azul Rey</option>
+                    <option value="#5BBCFF">Azul Claro</option>
+                    <option value="#FFC700">Amarillo</option>
+                    <option value="#41B06E">Verde</option>
+                    <option value="#BC7FCD">Morado</option>
+                    <option value="#FFFFFF">Blanco</option>
+                    <option value="#A0522D">Marrón</option>
+                    <option value="#A9A9A9">Gris</option>
+                    <option value="#E4C59E">Beige</option>
+                    <option value="#000000">Negro</option>
+                </select>
+            </p>
+            <p class="precio">$70</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="2">Agregar al carrito</a>
+        </div>
+       </div>
+
+       <div class="box">
+        <img src="imagenes/chalecom.jpg" alt="">
+        <div class="product-txt">
+            <h3>Chaleco</h3>
+            <p>Chaleco estilo clásico, un botón y bolsillos de ojal</p>
+            <p>Disponible en: 
+                <select id="color-producto" data-id="3">
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#F7418F">Fucsia</option>
+                    <option value="#EED3D9">Rosa Viejo</option>
+                    <option value="#0E46A3">Azul Rey</option>
+                    <option value="#5BBCFF">Azul Claro</option>
+                    <option value="#FFC700">Amarillo</option>
+                    <option value="#41B06E">Verde</option>
+                    <option value="#BC7FCD">Morado</option>
+                    <option value="#FFFFFF">Blanco</option>
+                    <option value="#A0522D">Marrón</option>
+                    <option value="#A9A9A9">Gris</option>
+                    <option value="#E4C59E">Beige</option>
+                    <option value="#000000">Negro</option>
+                </select>
+            </p>
+            <p class="precio">$60</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="3">Agregar al carrito</a>
+        </div>
+       </div>
+
+       <div class="box">
+        <img src="imagenes/bverde.jpg" alt="">
+        <div class="product-txt">
+            <h3>Conjunto Blazer+Pantalón</h3>
+            <p>Blazer estilo clásico, un botón y bolsillos de ojal</p>
+            <p>Pantalón corte recto pretina delgada</p>
+            <p>Disponible en: 
+                <select id="color-producto" data-id="4">
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#F7418F">Fucsia</option>
+                    <option value="#EED3D9">Rosa Viejo</option>
+                    <option value="#0E46A3">Azul Rey</option>
+                    <option value="#5BBCFF">Azul Claro</option>
+                    <option value="#FFC700">Amarillo</option>
+                    <option value="#41B06E">Verde</option>
+                    <option value="#BC7FCD">Morado</option>
+                    <option value="#FFFFFF">Blanco</option>
+                    <option value="#A0522D">Marrón</option>
+                    <option value="#A9A9A9">Gris</option>
+                    <option value="#E4C59E">Beige</option>
+                    <option value="#000000">Negro</option>
+                </select>
+            </p>
+            <p class="precio">$110</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="4">Agregar al carrito</a>
+        </div>
+       </div>
+
+       <div class="box">
+        <img src="imagenes/Mgvesnegro.jpg" alt="">
+        <div class="product-txt">
+            <h3>Vestido Ejecutivo</h3>
+            <p>Vestido estilo ejecutivo,corte en V </p>
+            <p>Disponible en: 
+                <select id="color-producto" data-id="5">
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#F7418F">Fucsia</option>
+                    <option value="#EED3D9">Rosa Viejo</option>
+                    <option value="#0E46A3">Azul Rey</option>
+                    <option value="#5BBCFF">Azul Claro</option>
+                    <option value="#FFC700">Amarillo</option>
+                    <option value="#41B06E">Verde</option>
+                    <option value="#BC7FCD">Morado</option>
+                    <option value="#FFFFFF">Blanco</option>
+                    <option value="#A0522D">Marrón</option>
+                    <option value="#A9A9A9">Gris</option>
+                    <option value="#E4C59E">Beige</option>
+                    <option value="#000000">Negro</option>
+                </select>
+            </p>
+            <p class="precio">$45</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar al carrito</a>
+        </div>
+       </div>
+
+       <div class="box">
+        <img src="imagenes/bldress.jpg" alt="">
+        <div class="product-txt">
+            <h3>BlazerDress</h3>
+            <p>Blazer dress estilo smoking, 6 botones</p>
+            <p>Disponible en: 
+                <select id="color-producto" data-id="6">
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#F7418F">Fucsia</option>
+                    <option value="#EED3D9">Rosa Viejo</option>
+                    <option value="#0E46A3">Azul Rey</option>
+                    <option value="#5BBCFF">Azul Claro</option>
+                    <option value="#FFC700">Amarillo</option>
+                    <option value="#41B06E">Verde</option>
+                    <option value="#BC7FCD">Morado</option>
+                    <option value="#FFFFFF">Blanco</option>
+                    <option value="#A0522D">Marrón</option>
+                    <option value="#A9A9A9">Gris</option>
+                    <option value="#E4C59E">Beige</option>
+                    <option value="#000000">Negro</option>
+                </select>
+            </p>
+            <p class="precio">$80</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar al carrito</a>
+        </div>
+       </div>
+
+       <div class="box">
+        <img src="imagenes/camisaseda.jpg" alt="">
+        <div class="product-txt">
+            <h3>Camisa de Seda</h3>
+            <p>Camisa de seda cuello clasico, botones cubiertos</p>
+            <p>Disponible en: 
+                <select id="color-producto" data-id="7">
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#F7418F">Fucsia</option>
+                    <option value="#EED3D9">Rosa Viejo</option>
+                    <option value="#0E46A3">Azul Rey</option>
+                    <option value="#5BBCFF">Azul Claro</option>
+                    <option value="#FFC700">Amarillo</option>
+                    <option value="#41B06E">Verde</option>
+                    <option value="#BC7FCD">Morado</option>
+                    <option value="#FFFFFF">Blanco</option>
+                    <option value="#A0522D">Marrón</option>
+                    <option value="#A9A9A9">Gris</option>
+                    <option value="#E4C59E">Beige</option>
+                    <option value="#000000">Negro</option>
+                </select>
+            </p>
+            <p class="precio">$40</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al carrito</a>
+        </div>
+       </div>
+
+       <div class="box">
+        <img src="imagenes/mhcamisas.jpg" alt="">
+        <div class="product-txt">
+            <h3>Camisa Clásica</h3>
+            <p>Camisa estilo clásica,corte en v o cuello redondo</p>
+            <p>Disponible en: 
+                <select id="color-producto" data-id="8">
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#0000FF">Azul</option>
+                    <option value="#FFFFFF">Blanco</option>
+                    <option value="#E4C59E">Beige</option>
+                    <option value="#000000">Negro</option>
+                </select>
+            </p>
+            <p class="precio">$35</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+        </div>
+       </div>
+
+       <div class="box">
+        <img src="imagenes/Irapan.jpg" alt="">
+        <div class="product-txt">
+            <h3>Pantalón</h3>
+            <p>Pantalón estilo clásico,corte recto o slim fit</p>
+            <p>Disponible en: 
+                <select id="color-producto" data-id="9">
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#F7418F">Fucsia</option>
+                    <option value="#EED3D9">Rosa Viejo</option>
+                    <option value="#0E46A3">Azul Rey</option>
+                    <option value="#5BBCFF">Azul Claro</option>
+                    <option value="#FFC700">Amarillo</option>
+                    <option value="#41B06E">Verde</option>
+                    <option value="#BC7FCD">Morado</option>
+                    <option value="#FFFFFF">Blanco</option>
+                    <option value="#A0522D">Marrón</option>
+                    <option value="#A9A9A9">Gris</option>
+                    <option value="#E4C59E">Beige</option>
+                    <option value="#000000">Negro</option>
+                </select>
+            </p>
+            <p class="precio">$40</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="9">Agregar al carrito</a>
+        </div>
+       </div>
+
+       <div class="box">
+        <img src="imagenes/banatalia.jpg" alt="">
+        <div class="product-txt">
+            <h3>Pantalón</h3>
+            <p>Pantalón bota ancha, pretina delgada, con bolsillos</p>
+            <p>Disponible en: 
+                <select id="color-producto" data-id="10">
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#F7418F">Fucsia</option>
+                    <option value="#EED3D9">Rosa Viejo</option>
+                    <option value="#0E46A3">Azul Rey</option>
+                    <option value="#5BBCFF">Azul Claro</option>
+                    <option value="#FFC700">Amarillo</option>
+                    <option value="#41B06E">Verde</option>
+                    <option value="#BC7FCD">Morado</option>
+                    <option value="#FFFFFF">Blanco</option>
+                    <option value="#A0522D">Marrón</option>
+                    <option value="#A9A9A9">Gris</option>
+                    <option value="#E4C59E">Beige</option>
+                    <option value="#000000">Negro</option>
+                </select>
+            </p>
+            <p class="precio">$50</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="10">Agregar al carrito</a>
+        </div>
+       </div>
+
+       <div class="box">
+        <img src="imagenes/bltop.jpg" alt="">
+        <div class="product-txt">
+            <h3>Blazer Cropped</h3>
+            <p>Blazer clásico estilo cropped</p>
+            <p>Disponible en: 
+                <select id="color-producto" data-id="11">
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#F7418F">Fucsia</option>
+                    <option value="#EED3D9">Rosa Viejo</option>
+                    <option value="#0E46A3">Azul Rey</option>
+                    <option value="#5BBCFF">Azul Claro</option>
+                    <option value="#FFC700">Amarillo</option>
+                    <option value="#41B06E">Verde</option>
+                    <option value="#BC7FCD">Morado</option>
+                    <option value="#FFFFFF">Blanco</option>
+                    <option value="#A0522D">Marrón</option>
+                    <option value="#A9A9A9">Gris</option>
+                    <option value="#E4C59E">Beige</option>
+                    <option value="#000000">Negro</option>
+                </select>
+            </p>
+            <p class="precio">$60</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="11">Agregar al carrito</a>
+        </div>
+       </div>
+
+       <div class="box">
+        <img src="imagenes/Anmao.jpg" alt="">
+        <div class="product-txt">
+            <h3>Blazer</h3>
+            <p>Blazer cuello mao, un botón y bolsillos de ojal</p>
+            <p>Disponible en: 
+                <select id="color-producto" data-id="12">
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#F7418F">Fucsia</option>
+                    <option value="#EED3D9">Rosa Viejo</option>
+                    <option value="#0E46A3">Azul Rey</option>
+                    <option value="#5BBCFF">Azul Claro</option>
+                    <option value="#FFC700">Amarillo</option>
+                    <option value="#41B06E">Verde</option>
+                    <option value="#BC7FCD">Morado</option>
+                    <option value="#FFFFFF">Blanco</option>
+                    <option value="#A0522D">Marrón</option>
+                    <option value="#A9A9A9">Gris</option>
+                    <option value="#E4C59E">Beige</option>
+                    <option value="#000000">Negro</option>
+                </select>
+            </p>
+            <p class="precio">$70</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="12">Agregar al carrito</a>
+        </div>
+       </div>
+
+       <div class="box">
+        <img src="imagenes/Liland.jpg" alt="">
+        <div class="product-txt">
+            <h3>Blazer</h3>
+            <p>Blazer estilo clásico, un boton y bolsillos de ojal</p>
+            <p>Disponible en: 
+                <select id="color-producto" data-id="13">
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#F7418F">Fucsia</option>
+                    <option value="#EED3D9">Rosa Viejo</option>
+                    <option value="#0E46A3">Azul Rey</option>
+                    <option value="#5BBCFF">Azul Claro</option>
+                    <option value="#FFC700">Amarillo</option>
+                    <option value="#41B06E">Verde</option>
+                    <option value="#BC7FCD">Morado</option>
+                    <option value="#FFFFFF">Blanco</option>
+                    <option value="#A0522D">Marrón</option>
+                    <option value="#A9A9A9">Gris</option>
+                    <option value="#E4C59E">Beige</option>
+                    <option value="#000000">Negro</option>
+                </select>
+            </p>
+            <p class="precio">$70</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="13">Agregar al carrito</a>
+        </div>
+       </div>
+
+       <div class="box">
+        <img src="imagenes/blcint.jpg" alt="">
+        <div class="product-txt">
+            <h3>Blazer con cinturón</h3>
+            <p>Blazer clásico con cinturon, un botón y bolsillos de ojal</p>
+            <p>Disponible en: 
+                <select id="color-producto" data-id="14">
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#F7418F">Fucsia</option>
+                    <option value="#EED3D9">Rosa Viejo</option>
+                    <option value="#0E46A3">Azul Rey</option>
+                    <option value="#5BBCFF">Azul Claro</option>
+                    <option value="#FFC700">Amarillo</option>
+                    <option value="#41B06E">Verde</option>
+                    <option value="#BC7FCD">Morado</option>
+                    <option value="#FFFFFF">Blanco</option>
+                    <option value="#A0522D">Marrón</option>
+                    <option value="#A9A9A9">Gris</option>
+                    <option value="#E4C59E">Beige</option>
+                    <option value="#000000">Negro</option>
+                </select>
+            </p>
+            <p class="precio">$60</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="14">Agregar al carrito</a>
+        </div>
+       </div>
+
+       <div class="box">
+        <img src="imagenes/conjnar.jpg" alt="">
+        <div class="product-txt">
+            <h3>Conjunto Chaleco+Pantalón</h3>
+            <p>Chaleco estilo clásico, un botón y bolsillos de ojal</p>
+            <p>Pantalón corte recto, pretina ancha y bolsillos laterales</p>
+            <p>Disponible en: 
+                <select id="color-producto" data-id="15">
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#F7418F">Fucsia</option>
+                    <option value="#EED3D9">Rosa Viejo</option>
+                    <option value="#0E46A3">Azul Rey</option>
+                    <option value="#5BBCFF">Azul Claro</option>
+                    <option value="#FFC700">Amarillo</option>
+                    <option value="#41B06E">Verde</option>
+                    <option value="#BC7FCD">Morado</option>
+                    <option value="#FFFFFF">Blanco</option>
+                    <option value="#A0522D">Marrón</option>
+                    <option value="#A9A9A9">Gris</option>
+                    <option value="#E4C59E">Beige</option>
+                    <option value="#000000">Negro</option>
+                </select>
+            </p>
+            <p class="precio">$100</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="15">Agregar al carrito</a>
+        </div>
+       </div>
+
+       <div class="box">
+        <img src="imagenes/zapatos.jpg" alt="">
+        <div class="product-txt">
+            <h3>Zapatos</h3>
+            <p>Zapatos de tacón (10cm) </p>
+            <p>Disponible en: 
+                <select id="color-producto" data-id="16">
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#EED3D9">Rosa Viejo</option>
+                    <option value="#FFFFFF">Blanco</option>
+                    <option value="#A0522D">Marrón</option>
+                    <option value="#E4C59E">Beige</option>
+                    <option value="#000000">Negro</option>
+                </select>
+            </p>
+            <p class="precio">$35</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="16">Agregar al carrito</a>
+        </div>
+       </div>
+    </div>
+
+    <div class="btn-2" id="load-more">Cargar Mas</div>
+   </main>
+
+   <section class="preguntas container">
+
+    <h2>Preguntas Frecuentes</h2>
+    <div class="preguntas-content">
+        <div class="pregunta-1">
+            <p>
+            ¿Qué tipo de ropa ejecutiva ofrecen?
+            </p>
+            <img src="imagenes/preguntas.svg" alt="">
+            <h4>Ofrecemos una amplia variedad de ropa ejecutiva para hombre y mujer, incluyendo trajes, blazers, pantalones, camisas, vestidos, faldas y blusas. Todos nuestros productos están confeccionados con materiales de alta calidad y con un diseño moderno y profesional.</h4>
+    </div>
+
+        <div class="pregunta-1">
+            <p>
+            ¿Qué tallas tienen disponibles?
+            </p>
+            <img src="imagenes/preguntas.svg" alt="">
+            <h4>Tenemos una amplia gama de tallas para que encuentres la prenda perfecta para tu cuerpo. Puedes consultar nuestra tabla de tallas en la página web o contactarnos si necesitas ayuda para elegir la talla adecuada.</h4>
+        </div>
+
+        <div class="pregunta-1">
+            <p>
+            ¿Ofrecen envíos a todo el país?
+            </p>
+            <img src="imagenes/preguntas.svg" alt="">
+            <h4>Sí, realizamos envíos a todo el país. Puedes consultar los plazos de entrega y los costos de envío en la página web.</h4>
+        </div>
+
+        <div class="pregunta-1">
+            <p>
+            ¿Cuál es su política de devoluciones?
+            </p>
+            <img src="imagenes/preguntas.svg" alt="">
+            <h4>Ofrecemos una política de devoluciones flexible. Si no estás satisfecho con tu compra, puedes devolverla en un plazo de [Especificar plazo] días desde la recepción del pedido. Para más información, consulta nuestra política de devoluciones en la página web.</h4>
+        </div>
+</div>
+   </section>
+
+   <footer class="footer">
+    <div class="footer-content container">
+        <div class="link">
+            <h3>INFORMACIÓN SOBRE LA EMPRESA</h3>
+            <ul>
+                <li><a href="#">Sobre PINMA</a></li>
+                <li><a href="#">Terminos y condiciones</a></li>
+                <li><a href="#">Política de privacidad y cookies</a></li>
+                <li>©2023 Pinma 225,C.A Todos los derechos reservados</li>
+            </ul>
+        </div>
+
+        <div class="link">
+            <h3>AYUDA Y SOPORTE</h3>
+            <ul>
+                <li><a href="#">Como Comprar</a></li>
+                <li><a href="#">Guia de tallas</a></li>
+                <li><a href="#">Devoluciones</a></li>
+                <li><a href="#">Reembolso</a></li>
+            </ul>
+        </div>
+
+        <div class="link">
+            <h3>ATENCION AL CLIENTE</h3>
+            <ul>
+                <li><a href="#">Contacta con nosotros</a></li>
+                <li><a href="#">Pagos</a></li>
+            </ul>
+        </div>
+
+        <div class="link">
+            <h3>Siguenos en:</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/pinmavestimenta?igsh=bDR0dGdwczBpa2M2" target="_blank">INSTAGRAM</a></li>
+                <li><a href="https://www.tiktok.com/@pinmavestimenta1?_t=8lE3IgPLNbB&_r=1" target="_blank">TIKTOK</a></li>
+            </ul>
+        </div>
+    </div>
+
+   </footer>
+
+
+    <script src="script.js"> </script>
+</body>
+</html>
+

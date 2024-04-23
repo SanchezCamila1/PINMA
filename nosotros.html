@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinma</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="index.html" class="logo">Pinma</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="imagenes/lista.svg" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html">Productos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img id="img-carrito" src="imagenes/carro.svg" alt="carrito">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <main class="nosotros">
+        <div class="container nosotros">
+            <h1>Quiénes Somos</h1>
+            <p>
+                En Pinma, somos una empresa venezolana con 3 años de experiencia en la confección de ropa ejecutiva y uniformes de alta calidad, personalizados a la medida y por talla. Nos apasiona crear prendas que no solo reflejen la imagen profesional de su empresa, sino que también brinden comodidad y estilo a sus colaboradores.
+            </p>
+
+            <section class="equipo">
+                <h2>Nuestra Equipo</h2>
+                <p>Nuestro equipo de profesionales altamente calificados cuenta con una amplia experiencia en el diseño, patronaje, confección y control de calidad de prendas de vestir. Nos mantenemos actualizados en las últimas tendencias de la moda ejecutiva y utilizamos materiales de la más alta calidad para garantizar la durabilidad y el buen acabado de nuestras prendas.</p>
+            </section>
+
+            <section class="trayectoria">
+                <h2>Nuestra Trayectoria</h2>
+                <p>
+                    Desde nuestra fundación en 2021, nos hemos consolidado como un referente en el mercado venezolano de la confección textil. A lo largo de estos años, hemos tenido el privilegio de vestir a miles de personas en empresas de diversos sectores, desde pequeñas startups hasta grandes corporaciones.
+                </p>
+            </section>
+
+            <section class="ventajas">
+                <h2>Ventajas de Trabajar con Nosotros</h2>
+                <ul>
+                    <li>Confección a la medida: Le ofrecemos prendas que se ajustan perfectamente a su cuerpo, resaltando sus atributos y proporcionándole un mayor confort.</li>
+                    <li>Confección por talla: También ofrecemos confección por talla, perfecto para que las empresas puedan vestir a todo su personal de la mejor manera.</li>
+                    <li>Alta calidad: Utilizamos las mejores telas y técnicas de confección para garantizar la calidad y durabilidad de nuestras prendas.</li>
+                    <li>Amplia variedad de modelos: Disponemos de una amplia variedad de modelos para elegir, para que pueda encontrar la prenda perfecta para cada ocasión.</li>
+                    <li>Atención personalizada: Le ofrecemos una atención personalizada para asesorarle y ayudarle a elegir la prenda que mejor se adapte a sus necesidades.</li>
+                    <li>Precios competitivos: Le ofrecemos precios competitivos que se ajustan a su presupuesto.</li>
+                </ul>
+            </section>
+
+            <section class="contacto">
+                <h2>Contáctanos</h2>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" id="asunto" name="asunto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </section>
+
+            <section class="mapa">
+                <h2>Nuestra Ubicación</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.439400043806!2d-66.87414602636944!3d10.465985364846025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a58910fea6327%3A0xdedec062827e1cd0!2sCentro%20Comercial%20Santa%20Fe!5e0!3m2!1ses!2sve!4v1713827904325!5m2!1ses!2sve" 
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>INFORMACIÓN SOBRE LA EMPRESA</h3>
+                <ul>
+                    <li><a href="#">Sobre PINMA</a></li>
+                    <li><a href="#">Terminos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad y cookies</a></li>
+                    <li>©2023 Pinma 225,C.A Todos los derechos reservados</li>
+                </ul>
+            </div>
+        
+            <div class="link">
+                <h3>AYUDA Y SOPORTE</h3>
+                <ul>
+                    <li><a href="#">Como Comprar</a></li>
+                    <li><a href="#">Guia de tallas</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                    <li><a href="#">Reembolso</a></li>
+                </ul>
+            </div>        
+
+            <div class="link">
+                <h3>ATENCION AL CLIENTE</h3>
+                <ul>
+                    <li><a href="#">Contacta con nosotros</a></li>
+                    <li><a href="#">Pagos</a></li>
+                </ul>
+            </div>
+        
+            <div class="link">
+                <h3>Siguenos en:</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/pinmavestimenta?igsh=bDR0dGdwczBpa2M2" target="_blank">INSTAGRAM</a></li>
+                    <li><a href="https://www.tiktok.com/@pinmavestimenta1?_t=8lE3IgPLNbB&_r=1" target="_blank">TIKTOK</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </footer>
+           
+</body>
+</html>
